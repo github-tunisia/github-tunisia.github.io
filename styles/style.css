@@ -1,11 +1,144 @@
+/****** import font-family from GOOGLE-FONT-API ******/
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,700");
 
-body{
-  background-color:#FF6347;
+/****** fix the size of window - respo - ******/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/****** some global style ******/ 
+body {
+  position: relative;
+  width: 100vw;
+  color: #FFFAFA;
+}
+
+/****** global container for the site ******/
+.wrapper {
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  width: 100vw;
+  min-height: 100vh;
+  background-color:#FF6347; /* #fde201*/
+  overflow-x: hidden;
+}
+
+/****** fix position & mv in IE9  ******/
+.landing {
+  width: 100%;
+  min-height: 350px;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translateY(-50%);
+}
+
+/****** style image ******/
+/* div.image {
+  height: 150px;
+  width: 100%;
+} */
+img {
+  width: auto;
+  max-height: 100%;
+  display: block;
+  margin: 0 auto;
+ /* box-shadow: rgb(97, 94, 83) 5px 5px 5px 5px;*/
+
+}
+
+/****** style main heading `title` ******/ 
 h1 {
   text-align: center;
+  font-family: "Josefin Sans", sans-serif;
   font-weight: 700;
   font-size: 6em;
+  margin-top: 18px;
+  letter-spacing: -3px;
   text-shadow: rgb(97, 94, 83) 1px 0 10px;
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+    font-size: 4.5em;
+  }
+  @media (min-width: 320px) and (max-width: 480px) {
+    font-size: 4em;
+  }
+}
+
+/****** style description `about-us` ******/
+.about-us {
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.5;
+  color: #d3d3d3;
+  background-color: #22222262;
+  padding: 10px;
+}
+
+/****** style links ******/
+/* all links */
+div.links{
+  width: 60%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding-top: 36px;
+ 
+    /* responsive */ 
+  @media (min-width: 800px) {
+    width: 80%;
+  }
+  @media (min-width: 1000px) {
+    width: 70%;
+  }
+  @media (min-width: 1200px) {
+    width: 60%;
+  }
+}
+/* single link */
+a.link {
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 5px;
+  text-align: center;
+  min-height: 30px;
+  text-decoration: none;
+  color: black;
+  font-weight: normal; /* 400 */
+  font-size: 18px;
+  border-bottom: 1px solid black;
+  white-space: nowrap;
+  font-family: "Josefin Sans", sans-serif;
+  padding: 10px;    
+}
+/* hover effect in links */
+a:hover {
+    background-color: black;
+    color: white;
+}
+/* responsive links - fix */
+@media (min-width: 320px) and (max-width: 830px) {
+  div.links{
+    width: 90%;
+    display: block;
+    flex-flow: none;
+  
+    justify-content: none;
+  }
+  a.link {
+    display: inline-block;
+    width: 100%;
+    border: 1px solid black;
+    font-size: 17px;
+    margin-bottom: 12px;
+    font-weight: 300;
+  }
+
+  h1{
+    margin-top: 18px;
+  }
 }
