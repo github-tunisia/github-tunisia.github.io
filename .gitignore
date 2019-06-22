@@ -1,0 +1,9 @@
+# ignore all locks file 
+package-lock.json
+yarn.lock
+
+# ignore mac os temp file 
+.DS_Store
+
+# ignore logs file 
+*.log
