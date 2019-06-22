@@ -37,10 +37,10 @@ body {
 }
 
 /****** style image ******/
-/* div.image {
-  height: 150px;
+div.image {
+  height: 300px;
   width: 100%;
-} */
+} 
 img {
   width: auto;
   max-height: 100%;
