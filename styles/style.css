@@ -1,0 +1,11 @@
+
+body{
+  background-color:#FF6347;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 6em;
+  text-shadow: rgb(97, 94, 83) 1px 0 10px;
+}
